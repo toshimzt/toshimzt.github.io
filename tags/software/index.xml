@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Katsutoshi Mizuta</title>
+    <link>https://toshimzt.github.io/tags/software/</link>
+    <description>Recent content in Software on Katsutoshi Mizuta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2016 13:13:10 +0100</lastBuildDate>
+    <atom:link href="/tags/software/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>matlabutils</title>
+      <link>https://toshimzt.github.io/project/matlabutils/</link>
+      <pubDate>Sun, 11 Dec 2016 13:13:10 +0100</pubDate>
+      
+      <guid>https://toshimzt.github.io/project/matlabutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nepa</title>
+      <link>https://toshimzt.github.io/project/nepa/</link>
+      <pubDate>Sun, 11 Dec 2016 11:30:38 +0100</pubDate>
+      
+      <guid>https://toshimzt.github.io/project/nepa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nprlab</title>
+      <link>https://toshimzt.github.io/project/nprlab/</link>
+      <pubDate>Sun, 11 Dec 2016 11:11:24 +0100</pubDate>
+      
+      <guid>https://toshimzt.github.io/project/nprlab/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

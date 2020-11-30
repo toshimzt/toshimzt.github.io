@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Katsutoshi Mizuta</title>
+    <link>https://toshimzt.github.io/tags/</link>
+    <description>Recent content in Tags on Katsutoshi Mizuta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Dec 2016 13:13:10 +0100</lastBuildDate>
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Software</title>
+      <link>https://toshimzt.github.io/tags/software/</link>
+      <pubDate>Sun, 11 Dec 2016 13:13:10 +0100</pubDate>
+      
+      <guid>https://toshimzt.github.io/tags/software/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
