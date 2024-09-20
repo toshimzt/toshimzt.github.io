@@ -61,6 +61,25 @@
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            About Me
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a href="/post/workHistory" data-target="post/workHistory">
+                <span>Work History</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/post/honors" data-target="/post/honors">
+                <span>Honors and Awards</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
             Research
             <span class="caret"></span>
           </a>
@@ -80,22 +99,17 @@
           </ul>
         </li>
 
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
-            Education
+            Teaching
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             
             <li class="nav-item">
-              <a href="/post/courses" data-target="/post/courses">
-                <span>Courses</span>
-              </a>
-            </li>
-         
-            <li class="nav-item">
-              <a href="/post/honors" data-target="/post/honors">
-                <span>Honors and Awards</span>
+              <a href="/post/experience" data-target="/post/experience">
+                <span>Experience</span>
               </a>
             </li>
           </ul>
@@ -146,8 +160,8 @@
         
         
         <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <a href="http://ufgrunwald.com/research/projects/" target="_blank" itemprop="url" rel="noopener">
-            <span itemprop="name">University of Florida, Soil and Water Sciences Department</span>
+          <a href="https://pss.ca.uky.edu/directory/katsutoshi-mizuta" target="_blank" itemprop="url" rel="noopener">
+            <span itemprop="name">University of Kentucky, Plant and Soil Science Department</span>
           </a>
         </h3>  
       </div>
@@ -246,12 +260,58 @@
 </ul>
 </li>
 <p></p>
-<li><p>Teaching Experience</p>
-
 <ul>
-<li>GIS and Landscape Modeling (for graduate)</li>
-<li>Introduction to Soil Science and Laboratory Experiments(for undergraduate)</li>
-</ul></li>
+<img src="/img/Research.jpg" alt="Research Image" style="width:100%;height:100%;" onclick="openModal()">
+
+<!-- Modal for enlarged image -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script src="/home.js"></script>
+
+<style>
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 1080px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</ul>
 </ul>
     <div class="row">
       <div>
@@ -294,23 +354,34 @@
   </section>
   
   <section id="contact" class="home-section">
-    <div class="container">
-  
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Contact</h1>
-  </div>
-  <div class="col-xs-12 col-md-8">
     
-    <ul class="fa-ul" itemscope>
-      <li>
-        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
-        <span id="person-email" itemprop="email">katsutoshimizuta at ufl dot edu</span>
-      </li>
-    </ul>
-  </div>
-</div>
- <p>For any collaborations in research and business, please contact the above email address.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 section-heading">
+          <h1>Contact</h1>
+        </div>
+        <p>For research and business inquiries/services, reach out below.</p>
+        <div class="col-xs-12 col-md-8">
+          <form id="contact-form" action="mailto:toshi.m@uky.edu" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="contact-reason">Reason for Contact:</label>
+              <select id="contact-reason" class="form-control" name="reason">
+                <option value="research">Fertilizer Prescription Maps</option>
+                <option value="business">Implementing On-Farm Experimentation (compensation may be available)</option>
+                <option value="general">Abandoned Land and Wanting to Pass it on or Make use of it</option>
+                <option value="reseach">Research Inquiries</option>
+                <option value="business">Business Inquiries</option>
+                <option value="general">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message:</label>
+              <textarea id="contact-message" class="form-control" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
   
