@@ -1064,9 +1064,9 @@ nav#navbar-main li {
 
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-  color: #66435A;
+  color: #f7f7f7;
   text-decoration: underline;
-  background-color: #ffffff;
+  background-color: #66435A;
 }
 
 .dropdown-menu > .active > a,
