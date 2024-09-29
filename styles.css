@@ -27,7 +27,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
@@ -48,6 +48,7 @@ body {
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
+  background-color: #fdfdfd;
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
   body {
@@ -81,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #313131;
+  color: #000000;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -111,7 +112,7 @@ h3.article-title a:hover {
 
 a:hover,
 a:focus {
-  color: #A94442;
+  color: #f00906;
 }
 
 img,
@@ -162,7 +163,7 @@ pre {
 hr {
   border: 0;
   height: 1px;
-  background: #333;
+  background: #fcfcfc;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
@@ -170,7 +171,7 @@ hr {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
+  color: #ffffff;
   border-left: .25rem solid #e5e5e5;
 }
 blockquote p:last-child {
@@ -243,7 +244,7 @@ small,
 }
 
 .home-section {
-  background-color: rgb(231, 231, 231);
+  background-color: #FFFFFF;
   padding: 110px 0 110px 0;
   animation: intro 0.3s both;
   animation-delay: 0.15s;
@@ -978,7 +979,7 @@ footer a#back_to_top i {
 }
 
 .navbar-default {
-  background: #fff;
+  background: #66435A;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1001,26 +1002,27 @@ nav#navbar-main li {
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #34495e;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .navbar-default .navbar-nav>li>a:focus {
-  color: #34495e;
+  color: #ffffff;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #0095eb;
+  color: #ffffff;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  color: #0095eb;
+  color: #fcfcfc;
   font-weight: 700;
   background-color: transparent !important; /* Override Bootstrap. */
+  text-decoration: underline;
 }
 
 .navbar-brand,
@@ -1034,13 +1036,19 @@ nav#navbar-main li {
 .navbar-brand img {
   max-height: 50px;
 }
+.dropdown-menu>li>a>span:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: #66435A;
+
+}
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #34495e !important;
+  background-color: #ffffff !important;
 }
 
 .dropdown-menu {
-  background-color: #fff !important;
+  background-color: #66435A !important;
 }
 
 .dropdown-menu > li > a {
@@ -1049,23 +1057,24 @@ nav#navbar-main li {
   clear: both;
   font-weight: 400;
   line-height: 1.42857143;
-  color: #34495e;
+  color: #ffffff;
   white-space: nowrap;
 }
 
+
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-  color: #0095eb;
-  text-decoration: none;
-  background-color: #fff;
+  color: #f7f7f7;
+  text-decoration: underline;
+  background-color: #66435A;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
   color: #fff;
-  text-decoration: none;
-  background-color: #0095eb;
+  text-decoration: underline;
+  background-color: #66435A;
   outline: 0;
 }
 
@@ -1073,20 +1082,21 @@ nav#navbar-main li {
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:visited {
-  color: #34495e !important;
-  background-color: #fff !important;
+  text-decoration: underline;
+  color: #ffffff !important;
+  background-color: #66435A !important;
 }
 
 .navbar-default .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-  color: #2b2b2b;
+  color: #ffffff;
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-  color: #2b2b2b;
+  color: #f7f4f4;
   background-color: transparent;
 }
 
@@ -1151,7 +1161,7 @@ nav#navbar-main li {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: #34495e;
+    color: #f1f3f5;
     white-space: nowrap;
   }
 
@@ -1168,19 +1178,19 @@ nav#navbar-main li {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
     line-height: 20px;
-    color: #34495e;
+    color: #ffffff;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: inherit;
+    color: white;
     background-color: transparent;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
-    color: #0095eb;
+    color: #fdfdfd;
     background-color: transparent;
   }
 
@@ -1198,6 +1208,7 @@ table {
   max-width: 100%;
   margin-bottom: 1rem;
   font-size: 0.93rem;
+  
 }
 
 table > thead > tr > th,
@@ -1214,7 +1225,7 @@ table > tfoot > tr > td {
 
 table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #E6E0E6;
 }
 
 table > caption + thead > tr:first-child > th,
@@ -1227,7 +1238,7 @@ table > thead:first-child > tr:first-child > td {
 }
 
 table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 1px solid #E6E0E6;
 }
 
 table table {
@@ -1237,7 +1248,7 @@ table table {
 /* Table Striped */
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+  background-color: #E6E0E6;
 }
 
 /* Table Hover */
